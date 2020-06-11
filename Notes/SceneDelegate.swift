@@ -1,8 +1,6 @@
 //
 //  SceneDelegate.swift
 //  Notes
-//
-//  Created by Richa Patel on 2020-06-08.
 //  Copyright © 2020 Simranjot singh. All rights reserved.
 //
 

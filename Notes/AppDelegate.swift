@@ -6,6 +6,7 @@
 //  Copyright © 2020 Simranjot singh. All rights reserved.
 //
 
+import Firebase
 import UIKit
 import CoreData
 
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
