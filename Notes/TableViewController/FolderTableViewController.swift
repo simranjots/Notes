@@ -114,9 +114,10 @@ class FolderTableViewController: UIViewController,UITableViewDelegate,UITableVie
         }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       // let folderName = folderData[indexPath.row]
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let newVC = sb.instantiateViewController(identifier: "notesTable") as! NotesTableViewController
-            
+            //newVC.category = folderName.folderName
             navigationController?.pushViewController(newVC, animated: true)
         }
       
@@ -188,7 +189,23 @@ class FolderTableViewController: UIViewController,UITableViewDelegate,UITableVie
                        }
                        
               print("This Folder was added : \(String(describing: self.folderName.text))")
-               
+                
+//                let appDelegate1 = UIApplication.shared.delegate as! AppDelegate
+//                let context1 = appDelegate1.persistentContainer.viewContext
+//               let notes = NSEntityDescription.insertNewObject(forEntityName: "Notes", into: context1)
+//               notes.setValue(self.folderName.text!, forKey: "category")
+//                            
+//                         do {
+//                             try context.save()
+//                             print(folders,"success")
+//                          self.folderData.append(FoldersDataModel(folderName: self.folderName.text!, notesCount: self.note))
+//                           self.tableView.reloadData()
+//                         } catch let error as NSError {
+//                             
+//                             print("Could not save. \(error), \(error.userInfo)")
+//                         }
+//                         
+//                print("This Folder was added : \(String(describing: self.folderName.text))")
           }
         
         }

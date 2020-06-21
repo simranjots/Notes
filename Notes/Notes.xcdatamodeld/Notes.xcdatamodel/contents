@@ -15,7 +15,7 @@
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Folders" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Folders" positionX="-245" positionY="-58.37890625" width="128" height="73"/>
         <element name="Notes" positionX="-54" positionY="9" width="128" height="163"/>
     </elements>
 </model>
